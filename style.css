@@ -34,7 +34,8 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: auto;
+    background: #222; /* Темно-сірий фон для навігації */
+    padding: 10px 0;
 }
 
 .menu-item {
@@ -49,7 +50,7 @@ nav {
     color: black;
     border-radius: 5px;
     text-align: center;
-    font-size: 0.9em; /* Зменшили на 25% */
+    font-size: 0.9em;
     font-weight: 400;
     transition: background 0.3s;
 }
@@ -61,7 +62,7 @@ nav {
 .submenu {
     display: none;
     position: absolute;
-    background: #222;
+    background: #333; /* Темно-сірий фон для випадаючого меню */
     padding: 10px;
     list-style: none;
     width: 220px;
@@ -73,8 +74,23 @@ nav {
 }
 
 .submenu li {
-    padding: 6px 10px;
-    line-height: 1.5; /* Додали міжрядковий інтервал */
-    font-size: 0.85em; /* Зменшили шрифт у випадаючих пунктах */
+    padding: 8px 12px;
+    line-height: 1.5;
+    font-size: 0.85em;
     font-weight: 300;
-    border-bottom: 1px solid rgba(255
+    border-bottom: 1px solid rgba(255, 215, 0, 0.4); /* Тонка золота лінія */
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.bottom-banner {
+    background: #222; /* Темно-сірий фон */
+    color: gold;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em; /* Шрифт як у меню */
+    font-weight: 400;
+    width: 100%;
+}
