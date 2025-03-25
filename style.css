@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #000000;
     color: #FFD700;
     margin: 0;
@@ -17,8 +19,13 @@ header {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
 }
-h1, h2 {
+h1 {
+    font-weight: 300;
+}
+h2 {
     margin: 0;
+    font-size: 16px; /* Зменшено на 25% */
+    font-weight: 400;
 }
 nav {
     display: flex;
@@ -27,12 +34,13 @@ nav {
 }
 .menu-item {
     background: #2E2E2E;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     width: 22%;
     text-align: center;
     cursor: pointer;
     position: relative;
+    font-size: 14px; /* Менший шрифт */
 }
 .menu-item:hover {
     background: #444;
@@ -40,7 +48,7 @@ nav {
 .submenu {
     display: none;
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -54,7 +62,11 @@ nav {
     display: block;
 }
 .submenu li {
-    padding: 5px;
+    padding: 8px 5px; /* Додаємо міжрядковий інтервал */
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3); /* Тонка лінія для виділення пунктів */
+}
+.submenu li:last-child {
+    border-bottom: none;
 }
 a {
     color: #FFD700;
