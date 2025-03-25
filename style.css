@@ -24,7 +24,7 @@ h1 {
 }
 h2 {
     margin: 0;
-    font-size: 16px; /* Зменшено на 25% */
+    font-size: 16px;
     font-weight: 400;
 }
 nav {
@@ -40,7 +40,7 @@ nav {
     text-align: center;
     cursor: pointer;
     position: relative;
-    font-size: 14px; /* Менший шрифт */
+    font-size: 14px;
 }
 .menu-item:hover {
     background: #444;
@@ -56,30 +56,24 @@ nav {
     background: #333;
     border-radius: 5px;
     text-align: left;
-    padding: 10px;
 }
 .menu-item:hover .submenu {
     display: block;
 }
 .submenu li {
-    padding: 8px 5px; /* Додаємо міжрядковий інтервал */
-    border-bottom: 1px solid rgba(255, 215, 0, 0.3); /* Тонка лінія для виділення пунктів */
+    padding: 8px 5px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
 }
 .submenu li:last-child {
     border-bottom: none;
 }
-a {
+.bottom-banner {
+    background: #222;
     color: #FFD700;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-img {
-    width: 16px;
-    height: 16px;
-    margin-left: 5px;
-    vertical-align: middle;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
 }
 footer {
     background: #1A1A1A;
