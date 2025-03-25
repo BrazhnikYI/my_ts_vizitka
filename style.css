@@ -7,9 +7,7 @@
 }
 
 body {
-    background: url('https://github.com/BrazhnikYI/my_ts_vizitka/blob/b5c22f098a20b75aaeed222074a9b955d1550570/Gemini_Generated_Image_Final1.jpg?raw=true') 
-                no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(135deg, #000428, #004e92);
     color: gold;
     font-family: "Roboto", sans-serif;
     display: flex;
