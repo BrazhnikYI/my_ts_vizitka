@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 .wrapper {
-    width: 800px; /* Формат A4 по ширині */
+    width: 800px; /* Формат A4 */
     text-align: center;
 }
 header {
@@ -31,26 +31,32 @@ nav {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     width: 30%;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+    text-align: left;
 }
-.menu-item p {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    font-size: 14px;
-    margin-top: 10px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
-.menu-item:hover p {
-    opacity: 1;
+li {
+    margin: 5px 0;
+}
+a {
+    color: #FFD700;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
 }
 footer {
     background: #1A1A1A;
     color: #FFD700;
     padding: 10px;
-    position: relative;
-    bottom: 0;
     width: 100%;
     box-shadow: 0 -4px 8px rgba(255, 215, 0, 0.2);
 }
