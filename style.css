@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #000000, #b8860b);
+    background: linear-gradient(135deg, #ff9800, #ffcc80); /* 🌅 ЗОЛОТИЙ ЗАХІД СОНЦЯ */
     color: gold;
     font-family: "Roboto", sans-serif;
     display: flex;
