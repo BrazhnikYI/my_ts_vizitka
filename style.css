@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Забороняє горизонтальну прокрутку */
 }
 
 .wrapper {
@@ -21,6 +22,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Фіксуємо максимальну ширину */
+    padding: 0 15px; /* Додаємо бокові відступи */
 }
 
 header {
@@ -94,4 +98,28 @@ nav {
     font-weight: 400;
     width: 100%;
     margin-top: auto; /* ОПУСКАЄ КАНВУ НА НИЗ */
+}
+
+/* 📱 АДАПТИВНЕ МЕНЮ ДЛЯ СМАРТФОНІВ */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Меню стане вертикальним */
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .menu-item {
+        margin: 5px 0; /* Менше відстані між пунктами */
+    }
+
+    .menu-item h2 {
+        font-size: 1em; /* Збільшуємо текст */
+        padding: 10px 20px;
+    }
+
+    .submenu {
+        position: static; /* Щоб не обрізалося на малих екранах */
+        width: auto;
+        text-align: center;
+    }
 }
