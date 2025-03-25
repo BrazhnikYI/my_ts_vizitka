@@ -8,7 +8,22 @@ document.getElementById("lang-toggle").addEventListener("click", function () {
             contacts: "КОНТАКТИ",
             switchLang: "UA / ENG",
             bottomText: "Допоможемо. Підтримаємо. Захистимо.",
-            footerText: "© 2025 ДОПОМОЖЕМО ОБРАТИ, НАЛАШТУВАТИ, ЗАХИСТИТИ"
+            serviceItems: [
+                "Налаштування сервера",
+                "Обслуговування баз даних",
+                "Інформаційна безпека",
+                "Міграція сервісів",
+                "Консультації і технічна підтримка",
+                "Оптимізація витрат на IT",
+                "Супровід проектів"
+            ],
+            portfolioItems: [
+                "Мережа аптек – повний супровід",
+                "Виробниче підприємство – сервери, інфобезпека",
+                "Аграрні компанії – частковий супровід, хмарні сервери",
+                "Малий бізнес – роздрібні магазини, хмарні сервіси"
+            ],
+            contactsItems: ["Юрій", "Віталій"]
         },
         en: {
             title: "IT Support for Your Business",
@@ -17,7 +32,22 @@ document.getElementById("lang-toggle").addEventListener("click", function () {
             contacts: "CONTACTS",
             switchLang: "ENG / UA",
             bottomText: "We Help. We Support. We Protect.",
-            footerText: "© 2025 HELP TO CHOOSE, CONFIGURE, PROTECT"
+            serviceItems: [
+                "Server Setup",
+                "Database Maintenance",
+                "Cybersecurity",
+                "Service Migration",
+                "Consulting & Tech Support",
+                "IT Cost Optimization",
+                "Project Support"
+            ],
+            portfolioItems: [
+                "Pharmacy Chain – Full Support",
+                "Manufacturing – Servers, Security",
+                "Agricultural Companies – Cloud Servers",
+                "Small Business – Cloud Services"
+            ],
+            contactsItems: ["Yuriy", "Vitaliy"]
         }
     };
 
@@ -30,5 +60,16 @@ document.getElementById("lang-toggle").addEventListener("click", function () {
     document.getElementById("contacts-title").innerText = texts[newLang].contacts;
     document.getElementById("lang-toggle").innerText = texts[newLang].switchLang;
     document.getElementById("bottom-text").innerText = texts[newLang].bottomText;
-    document.getElementById("footer-text").innerText = texts[newLang].footerText;
+
+    // Переклад підпунктів меню
+    document.querySelectorAll(".service-item").forEach((item, index) => {
+        item.innerText = texts[newLang].serviceItems[index];
+    });
+
+    document.querySelectorAll(".portfolio-item").forEach((item, index) => {
+        item.innerText = texts[newLang].portfolioItems[index];
+    });
+
+    document.getElementById("yuriy").innerText = texts[newLang].contactsItems[0];
+    document.getElementById("vitaliy").innerText = texts[newLang].contactsItems[1];
 });
