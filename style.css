@@ -1,84 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #000000;
-    color: #FFD700;
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+    color: gold;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .wrapper {
-    width: 800px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    margin: 20px 0;
     text-align: center;
 }
-header {
-    background: #1A1A1A;
-    color: #FFD700;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
-}
-h1 {
-    font-weight: 300;
-}
-h2 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-}
+
 nav {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: auto; /* Щоб меню не розтягувало сайт вниз */
 }
+
 .menu-item {
-    background: #2E2E2E;
-    padding: 15px;
-    border-radius: 8px;
-    width: 22%;
-    text-align: center;
-    cursor: pointer;
     position: relative;
-    font-size: 14px;
+    margin: 0 20px;
 }
-.menu-item:hover {
-    background: #444;
+
+.menu-item h2 {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: darkgoldenrod;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s;
 }
+
+.menu-item h2:hover {
+    background: goldenrod;
+}
+
 .submenu {
     display: none;
-    list-style-type: none;
-    padding: 10px;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #333;
+    background: #222;
+    padding: 10px;
+    list-style: none;
+    width: 200px;
     border-radius: 5px;
-    text-align: left;
 }
+
 .menu-item:hover .submenu {
     display: block;
 }
+
 .submenu li {
-    padding: 8px 5px;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    padding: 5px 10px;
+    border-bottom: 1px solid gold;
 }
+
 .submenu li:last-child {
     border-bottom: none;
 }
+
 .bottom-banner {
-    background: #222;
-    color: #FFD700;
+    background: darkgoldenrod;
+    color: black;
+    text-align: center;
     padding: 15px;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 20px;
-}
-footer {
-    background: #1A1A1A;
-    color: #FFD700;
-    padding: 10px;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(255, 215, 0, 0.2);
-}
+    font-size:
