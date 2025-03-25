@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 .wrapper {
-    width: 800px; /* Формат A4 */
+    width: 800px;
     text-align: center;
 }
 header {
@@ -26,19 +26,35 @@ nav {
     margin: 20px 0;
 }
 .menu-item {
-    background: #1A1A1A;
+    background: #2E2E2E;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-    width: 30%;
-    text-align: left;
+    width: 22%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
 }
-ul {
+.menu-item:hover {
+    background: #444;
+}
+.submenu {
+    display: none;
     list-style-type: none;
     padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #333;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
 }
-li {
-    margin: 5px 0;
+.menu-item:hover .submenu {
+    display: block;
+}
+.submenu li {
+    padding: 5px;
 }
 a {
     color: #FFD700;
