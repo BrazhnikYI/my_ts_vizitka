@@ -7,8 +7,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #111, #444);
-}
+    background: linear-gradient(135deg, #000000, #b8860b);
     color: gold;
     font-family: "Roboto", sans-serif;
     display: flex;
