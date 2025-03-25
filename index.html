@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сервери. Бази даних. Проекти</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,7 +16,7 @@
         <nav>
             <div class="menu-item">
                 <h2>НАШІ ПОСЛУГИ</h2>
-                <ul>
+                <ul class="submenu">
                     <li>Налаштування сервера</li>
                     <li>Обслуговування баз даних</li>
                     <li>Інформаційна безпека</li>
@@ -28,7 +29,7 @@
 
             <div class="menu-item">
                 <h2>ПОРТФОЛІО</h2>
-                <ul>
+                <ul class="submenu">
                     <li>Мережа аптек – повний супровід</li>
                     <li>Виробниче підприємство – сервери, інфобезпека</li>
                     <li>Аграрні компанії – частковий супровід, хмарні сервери</li>
@@ -38,17 +39,16 @@
 
             <div class="menu-item">
                 <h2>КОНТАКТИ</h2>
-                <ul>
+                <ul class="submenu">
                     <li>Юрій (+380661212543) <img src="telegram.svg" alt="Telegram"> <img src="whatsapp.svg" alt="WhatsApp"></li>
                     <li>Віталій (+380667989062) <img src="telegram.svg" alt="Telegram"> <img src="whatsapp.svg" alt="WhatsApp"></li>
                     <li>Email: <a href="mailto:dev.null.ua@gmail.com">dev.null.ua@gmail.com</a></li>
                 </ul>
             </div>
+
+            <div class="menu-item lang-switch">
+                <h2 id="lang-toggle">UA / ENG</h2>
+            </div>
         </nav>
 
-        <footer>
-            <p>© 2025 ДОПОМОЖЕМО ОБРАТИ, НАЛАШТУВАТИ, ЗАХИСТИТИ</p>
-        </footer>
-    </div>
-</body>
-</html>
+        <footer
