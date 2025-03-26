@@ -130,53 +130,32 @@ nav {
     }
 }
 
-/* === 📌 ОФОРМЛЕННЯ КОНТАКТІВ === */
+/* === 📌 ОФОРМЛЕННЯ КОНТАКТІВ (БЕЗ ЛОГОТИПІВ) === */
 .contacts {
     margin-top: 20px;
 }
 
 .contact-item {
     margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .contact-item a {
     color: gold;
     text-decoration: none;
     font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .contact-item a:hover {
+    color: darkgoldenrod;
     text-decoration: underline;
-}
-
-/* 📌 ВАРІАНТ 1: Іконки FontAwesome */
-.contact-item i {
-    font-size: 1.5em;
-}
-
-/* 📌 ВАРІАНТ 2: Іконки у вигляді картинок */
-.contact-item img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
 }
 
 /* 📱 АДАПТИВНІСТЬ КОНТАКТІВ */
 @media (max-width: 768px) {
     .contact-item a {
         font-size: 1em;
-    }
-
-    .contact-item i,
-    .contact-item img {
-        font-size: 1.2em;
-        width: 20px;
-        height: 20px;
     }
 }
