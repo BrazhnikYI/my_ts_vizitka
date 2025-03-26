@@ -12,10 +12,10 @@ body {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* 📌 ВИПРАВЛЕНО ЗМІЩЕННЯ */
     min-height: 100vh;
-    overflow-x: hidden;
-    text-align: center;
+    overflow-x: hidden; /* Забороняє горизонтальну прокрутку */
+    text-align: center; /* Центруємо текст */
 }
 
 .wrapper {
@@ -25,9 +25,9 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+    max-width: 1200px; /* Фіксуємо максимальну ширину */
+    padding: 0 15px; /* Додаємо бокові відступи */
+    margin: 0 auto; /* 📌 ВИПРАВЛЕНО ЗМІЩЕННЯ */
 }
 
 header {
@@ -66,6 +66,7 @@ nav {
     background: goldenrod;
 }
 
+/* 📌 ПІДПУНКТИ МЕНЮ ТЕПЕР ВИРІВНЯНІ ПО ЛІВОМУ КРАЮ */
 .submenu {
     display: none;
     position: absolute;
@@ -74,8 +75,8 @@ nav {
     list-style: none;
     width: 220px;
     border-radius: 5px;
-    text-align: left;
-    padding-left: 10px;
+    text-align: left; /* ✅ ВИРІВНЮЄМО ПО ЛІВОМУ КРАЮ */
+    padding-left: 10px; /* ✅ Додаємо відступ */
 }
 
 .menu-item:hover .submenu {
@@ -125,37 +126,7 @@ nav {
     .submenu {
         position: static;
         width: auto;
-        text-align: left;
-        padding-left: 10px;
-    }
-}
-
-/* === 📌 ОФОРМЛЕННЯ КОНТАКТІВ (БЕЗ ЛОГОТИПІВ) === */
-.contacts {
-    margin-top: 20px;
-}
-
-.contact-item {
-    margin: 10px 0;
-    text-align: center;
-}
-
-.contact-item a {
-    color: gold;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.contact-item a:hover {
-    color: darkgoldenrod;
-    text-decoration: underline;
-}
-
-/* 📱 АДАПТИВНІСТЬ КОНТАКТІВ */
-@media (max-width: 768px) {
-    .contact-item a {
-        font-size: 1em;
+        text-align: left; /* ✅ Вирівнюємо підпункти по лівому краю і тут */
+        padding-left: 10px; /* ✅ Додаємо відступ */
     }
 }
