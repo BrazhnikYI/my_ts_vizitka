@@ -130,3 +130,21 @@ nav {
         padding-left: 10px; /* ✅ Додаємо відступ */
     }
 }
+
+/* Виправлення відображення іконок у мобільному меню */
+.contact-item img {
+    width: 20px;  /* Або інший розмір, якщо потрібно */
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Виправлення кольору email у меню КОНТАКТИ */
+.contact-item a {
+    color: gold; /* Робимо його того ж кольору, що й інші підпункти */
+    text-decoration: none; /* Видаляємо підкреслення */
+}
+
+.contact-item a:hover {
+    text-decoration: underline; /* Додаємо підкреслення при наведенні */
+}
