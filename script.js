@@ -7,7 +7,7 @@ document.getElementById("lang-toggle").addEventListener("click", function () {
             portfolio: "ПОРТФОЛІО",
             contacts: "КОНТАКТИ",
             switchLang: "UA / ENG",
-            bottomText: "Допоможемо. Підтримаємо. Захистимо.",
+            bottomText: "2016 © Допоможемо. Підтримаємо. Захистимо.",
             serviceItems: [
                 "Налаштування сервера",
                 "Обслуговування баз даних",
@@ -31,7 +31,7 @@ document.getElementById("lang-toggle").addEventListener("click", function () {
             portfolio: "PORTFOLIO",
             contacts: "CONTACTS",
             switchLang: "ENG / UA",
-            bottomText: "We Help. We Support. We Protect.",
+            bottomText: "2016 © We Help. We Support. We Protect.",
             serviceItems: [
                 "Server Setup",
                 "Database Maintenance",
