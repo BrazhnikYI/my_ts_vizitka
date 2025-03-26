@@ -12,10 +12,10 @@ body {
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 📌 ВИПРАВЛЕНО ЗМІЩЕННЯ */
+    align-items: center;
     min-height: 100vh;
-    overflow-x: hidden; /* Забороняє горизонтальну прокрутку */
-    text-align: center; /* Центруємо текст */
+    overflow-x: hidden;
+    text-align: center;
 }
 
 .wrapper {
@@ -25,9 +25,9 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    max-width: 1200px; /* Фіксуємо максимальну ширину */
-    padding: 0 15px; /* Додаємо бокові відступи */
-    margin: 0 auto; /* 📌 ВИПРАВЛЕНО ЗМІЩЕННЯ */
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 header {
@@ -66,7 +66,6 @@ nav {
     background: goldenrod;
 }
 
-/* 📌 ПІДПУНКТИ МЕНЮ ТЕПЕР ВИРІВНЯНІ ПО ЛІВОМУ КРАЮ */
 .submenu {
     display: none;
     position: absolute;
@@ -75,8 +74,8 @@ nav {
     list-style: none;
     width: 220px;
     border-radius: 5px;
-    text-align: left; /* ✅ ВИРІВНЮЄМО ПО ЛІВОМУ КРАЮ */
-    padding-left: 10px; /* ✅ Додаємо відступ */
+    text-align: left;
+    padding-left: 10px;
 }
 
 .menu-item:hover .submenu {
@@ -126,25 +125,58 @@ nav {
     .submenu {
         position: static;
         width: auto;
-        text-align: left; /* ✅ Вирівнюємо підпункти по лівому краю і тут */
-        padding-left: 10px; /* ✅ Додаємо відступ */
+        text-align: left;
+        padding-left: 10px;
     }
 }
 
-/* Виправлення відображення іконок у мобільному меню */
-.contact-item img {
-    width: 20px;  /* Або інший розмір, якщо потрібно */
-    height: auto;
-    vertical-align: middle;
-    margin-left: 5px;
+/* === 📌 ОФОРМЛЕННЯ КОНТАКТІВ === */
+.contacts {
+    margin-top: 20px;
 }
 
-/* Виправлення кольору email у меню КОНТАКТИ */
+.contact-item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-item a {
-    color: gold; /* Робимо його того ж кольору, що й інші підпункти */
-    text-decoration: none; /* Видаляємо підкреслення */
+    color: gold;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .contact-item a:hover {
-    text-decoration: underline; /* Додаємо підкреслення при наведенні */
+    text-decoration: underline;
+}
+
+/* 📌 ВАРІАНТ 1: Іконки FontAwesome */
+.contact-item i {
+    font-size: 1.5em;
+}
+
+/* 📌 ВАРІАНТ 2: Іконки у вигляді картинок */
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* 📱 АДАПТИВНІСТЬ КОНТАКТІВ */
+@media (max-width: 768px) {
+    .contact-item a {
+        font-size: 1em;
+    }
+
+    .contact-item i,
+    .contact-item img {
+        font-size: 1.2em;
+        width: 20px;
+        height: 20px;
+    }
 }
